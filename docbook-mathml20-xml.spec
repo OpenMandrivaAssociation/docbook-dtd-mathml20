@@ -17,7 +17,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 BuildArch: noarch
 
 BuildRequires: libxml2-utils
-Prereq 	: sgml-common >= 0.6.3-2mdk
+Requires: sgml-common >= 0.6.3-2mdk
 
 %description
 The DocBook Document Type Definition (DTD) describes the syntax of
