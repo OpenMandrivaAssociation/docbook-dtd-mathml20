@@ -13,7 +13,6 @@ URL    : http://numexp.sourceforge.net/
 # tar.gz at http://www.w3.org/Math/DTD/mathml2.tgz
 Source0  : mathml2.tar.bz2
 Patch0   : %{name}-sysid-base.patch.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 BuildArch: noarch
 
 BuildRequires: libxml2-utils
