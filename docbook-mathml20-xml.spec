@@ -4,7 +4,7 @@
 
 Name:    docbook-dtd-%{mltype}
 Version: 1.0
-Release:  %mkrel 1
+Release:  %mkrel 3
 Group  : Publishing
 Summary: XHTML 1.1 plus MathML 2.0 document type definition
 License: Distributable
