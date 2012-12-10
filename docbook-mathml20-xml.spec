@@ -4,7 +4,7 @@
 
 Name:    docbook-dtd-%{mltype}
 Version: 1.0
-Release:  %mkrel 3
+Release:  %mkrel 1
 Group  : Publishing
 Summary: XHTML 1.1 plus MathML 2.0 document type definition
 License: Distributable
@@ -13,6 +13,7 @@ URL    : http://numexp.sourceforge.net/
 # tar.gz at http://www.w3.org/Math/DTD/mathml2.tgz
 Source0  : mathml2.tar.bz2
 Patch0   : %{name}-sysid-base.patch.bz2
+BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 BuildArch: noarch
 
 BuildRequires: libxml2-utils
@@ -111,3 +112,15 @@ SUBCATALOG="%{_sysconfdir}/xml/mathml.cat"
 %{_bindir}/xmlcatalog --noout --del \
 	"file://$SUBCATALOG" $CATALOG
  
+
+
+%changelog
+* Tue Dec 11 2007 Thierry Vignaud <tvignaud@mandriva.com> 1.0-1mdv2008.1
++ Revision: 117227
+- kill prereq
+- use %%mkrel
+- import docbook-dtd-mathml20
+
+
+* Mon Jun 30 2003 Abel Cheung <maddog@linux.org.hk> 1.0-1mdk
+- First spec for Mandrake
